@@ -1,0 +1,10 @@
+---
+- name: Clone a git repo
+  hosts: all
+  
+  tasks:
+     
+     - name: Clone a existing git repo 
+       git:
+          repo: 'https://github.com/pcberni96/testing_deploy_container.git'
+          dest: "/testing/git_repo00"
