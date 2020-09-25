@@ -1,0 +1,11 @@
+---
+- name: Update 
+  hosts: all
+  
+  tasks:
+     - name: 
+       git:
+         repos: 'https://github.com/pcberni96/testing_deploy_container.git'
+         dest: "/testing/git_repo00"
+         update: yes
+     
